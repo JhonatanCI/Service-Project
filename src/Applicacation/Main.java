@@ -1,6 +1,6 @@
 package Applicacation;
 
-import controller.ClienteController;
+import controller.StartMenuController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -17,8 +17,8 @@ public class Main extends Application{
 		@Override
 		public void start(Stage primaryStage) throws Exception {
 			// TODO Auto-generated method stub
-			FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/ClientUI.fxml"));
-			loader.setController(new ClienteController());
+			FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/StartMenu.fxml"));
+			loader.setController(new StartMenuController());
 			Parent parent = (Parent) loader.load();
 			Scene scene = new Scene(parent);
 			Stage stage = new Stage();

@@ -1,13 +1,12 @@
 package controller;
 import java.io.IOException;
 import java.net.URL;
-import java.util.Date;
 import java.util.ResourceBundle;
 
 import javafx.fxml.Initializable;
 import Applicacation.Main;
 import Model.Cliente;
-import Model.Servicio;
+import Model.Empresa;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -19,35 +18,38 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
-public class TabladeServiciosController implements Initializable{
-
+public class TabladeClientesController implements Initializable{
     @FXML
-    private TableColumn<Servicio, String> Code_Column;
-
-    @FXML
-    private TableColumn<Servicio, Date> Date_Install_Colimn;
-
-    @FXML
-    private TableColumn<Servicio, Boolean> State_Coluimn;
-    @FXML
-    private TableView<Servicio> Services_Table;
+    private TableColumn<Cliente, String> Code_Column;
 
     @FXML
     private Button Return_Button;
 
+    @FXML
+    private TableColumn<Cliente, String> Name_Colimn;
+
+    @FXML
+    private TableView<Cliente> Client_Table;
+
+    @FXML
+    private TableColumn<Cliente, String> Email_Coluimn;
+
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		
-    	Code_Column.setCellValueFactory(new PropertyValueFactory<>("cost"));
-    	Date_Install_Colimn.setCellValueFactory(new PropertyValueFactory<>("type"));
-    	State_Coluimn.setCellValueFactory(new PropertyValueFactory<>("desc"));
+    	Code_Column.setCellValueFactory(new PropertyValueFactory<>("id"));
+    	Name_Colimn.setCellValueFactory(new PropertyValueFactory<>("nombre"));
+    	Email_Coluimn.setCellValueFactory(new PropertyValueFactory<>("email"));
 		
-		Services_Table.setItems(Cliente.servicio);
+		Client_Table.setItems(Empresa.clientes);
 		
-		Services_Table.setOnMouseClicked(event->{Object stClicked = Services_Table.getSelectionModel().getSelectedItem();
-            
+		Client_Table.setOnMouseClicked(event->{Cliente stClicked = Client_Table.getSelectionModel().getSelectedItem();
 			try {
-                showServiceInfo(stClicked);
+				if(stClicked!=null){
+					System.out.println(stClicked.getNombre());
+				
+                showClientInfo(stClicked);}
+				
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -56,8 +58,8 @@ public class TabladeServiciosController implements Initializable{
 	}
     @FXML
     void Return(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/ClientUI.fxml"));
-		loader.setController(new ClienteController());
+		FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/StartMenu.fxml"));
+		loader.setController(new StartMenuController());
 		Parent parent = (Parent) loader.load();
 		Scene scene = new Scene(parent);
 		Stage stage = new Stage();
@@ -66,9 +68,9 @@ public class TabladeServiciosController implements Initializable{
         close();
     }
 
-    public void showServiceInfo(Object ob) throws IOException {
-    	FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/ServicioUI.fxml"));
-		loader.setController(new ServicioController(ob));
+    public void showClientInfo(Cliente ob) throws IOException {
+    	FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/ClientUI.fxml"));
+		loader.setController(new ClienteController(ob));
 		Parent parent = (Parent) loader.load();
 		Scene scene = new Scene(parent);
 		Stage stage = new Stage();
