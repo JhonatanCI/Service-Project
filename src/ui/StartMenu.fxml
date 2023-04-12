@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="623.0" style="-fx-background-color: #fffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="Clients_Button" layoutX="113.0" layoutY="170.0" mnemonicParsing="false" onAction="#ShowClients" prefHeight="61.0" prefWidth="120.0" text="Clientes" />
+      <Button fx:id="ListServices_Button" layoutX="326.0" layoutY="170.0" mnemonicParsing="false" onAction="#ShowServices" prefHeight="61.0" prefWidth="135.0" text="Lista de Servicios" />
+      <Text layoutX="173.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenido" wrappingWidth="196.669921875">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

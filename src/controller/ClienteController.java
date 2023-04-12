@@ -71,7 +71,7 @@ public class ClienteController {
 
     @FXML
     void Update_Info(ActionEvent event) {
-
+      
     }
 
     private void close(){
