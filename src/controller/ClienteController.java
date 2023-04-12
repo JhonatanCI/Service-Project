@@ -45,6 +45,12 @@ public class ClienteController {
     @FXML
     private TextField Name_Client_Text;
 
+    public ClienteController(Object ob) {
+    }
+
+    public ClienteController() {
+    }
+
     @FXML
     void CreateService(ActionEvent event) throws IOException {
 		FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/ServicioCreation.fxml"));

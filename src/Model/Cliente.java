@@ -1,7 +1,7 @@
 package Model;
 
+import java.time.LocalDate;
 import java.util.Collection;
-import java.util.Date;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -11,7 +11,7 @@ public class Cliente {
 	public static ObservableList<Servicio> servicio =  FXCollections.observableArrayList();
 	private String nombre;
 	private String id;
-	private Date fecha_Registro;
+	private LocalDate fecha_Registro;
 	private String cod_Contrato;
 	private String dir_Facturacion;
 	private String tel_Contacto;
@@ -21,7 +21,7 @@ public class Cliente {
 	public Cliente(){
 		
 	}
-	public Cliente(String nombre, String id, Date fecha_Registro, String cod_Contrato, String dir_Facturacion,  String tel_Contacto, String email,Estado state){
+	public Cliente(String nombre, String id, LocalDate fecha_Registro, String cod_Contrato, String dir_Facturacion,  String tel_Contacto, String email,Estado state){
 		this.nombre= nombre;
 		this.id = id;
 		this.fecha_Registro= fecha_Registro;
@@ -58,11 +58,11 @@ public class Cliente {
 		this.id = id;
 	}
 
-	public Date getFecha_Registro() {
+	public LocalDate getFecha_Registro() {
 		return this.fecha_Registro;
 	}
 
-	public void setFecha_Registro(Date fecha_Registro) {
+	public void setFecha_Registro(LocalDate fecha_Registro) {
 		this.fecha_Registro = fecha_Registro;
 	}
 

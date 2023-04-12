@@ -15,5 +15,6 @@
             <Font size="35.0" />
          </font>
       </Text>
+      <Button fx:id="Create_Client_Button" layoutX="211.0" layoutY="268.0" mnemonicParsing="false" onAction="#Create_Client" prefHeight="61.0" prefWidth="120.0" text="Crear cliente" />
    </children>
 </AnchorPane>

@@ -20,9 +20,12 @@ public class StartMenuController {
         private Button ListServices_Button;
 
         @FXML
+        private Button Create_Client_Button;
+
+        @FXML
         void ShowClients(ActionEvent event) throws IOException {
-            FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/ClienteController.fxml"));
-            loader.setController(new ClienteController());
+            FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/TabladeClientes.fxml"));
+            loader.setController(new TabladeClientesController());
             Parent parent = (Parent) loader.load();
             Scene scene = new Scene(parent);
             Stage stage = new Stage();
@@ -42,6 +45,19 @@ public class StartMenuController {
             stage.show();
             close();
         }
+
+        @FXML
+        void Create_Client(ActionEvent event) throws IOException {
+            FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/ClienteCreation.fxml"));
+            loader.setController(new CrearClienteController());
+            Parent parent = (Parent) loader.load();
+            Scene scene = new Scene(parent);
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.show();
+            close();
+        }
+        
 
         private void close() {
             Stage stage = (Stage) Clients_Button.getScene().getWindow();

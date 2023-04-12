@@ -1,24 +1,22 @@
 package Model;
 
-import java.util.ArrayList;
-import java.util.Date;
+import java.time.LocalDate;
+
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 public class Empresa {
 
 	private String direccion;
 	private String nombre;
-	private ArrayList<Cliente> clientes = new ArrayList<Cliente>();
+	public static ObservableList<Cliente> clientes = FXCollections.observableArrayList();
 
-	public ArrayList<Cliente> getClientes() {
-		return clientes;
-	}
-
-	public void registrarCliente(String nombre, String id, Date f_R, String c_c, String d_F, String t_C, String e,Estado state) {
+	public void registrarCliente(String nombre, String id, LocalDate f_R, String c_c, String d_F, String t_C, String e,Estado state) {
 		clientes.add(new Cliente(nombre,id,f_R,c_c,d_F,t_C,e,state));
 	}
 
 	
-	public void editarCliente(String nombre, String id, Date f_R, String c_c, String d_F, String t_C, String e,Estado state) {
+	public void editarCliente(String nombre, String id, LocalDate f_R, String c_c, String d_F, String t_C, String e,Estado state) {
 
 		clientes.get(consultarClientePos(id)).setNombre(nombre);
 		clientes.get(consultarClientePos(id)).setFecha_Registro(f_R);
