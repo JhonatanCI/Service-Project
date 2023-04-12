@@ -34,7 +34,7 @@ public class Empresa {
 	}
 
 	
-	public Cliente consultarCliente(String id) {
+	public static Cliente consultarCliente(String id) {
 		Cliente cliente= new Cliente();
 		for (int i = 0; i <clientes.size(); i ++) {
 			if(id == clientes.get(i).getId()){

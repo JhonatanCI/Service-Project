@@ -1,11 +1,16 @@
 package controller;
 
 import java.io.IOException;
+import java.net.URL;
+import java.time.LocalDate;
+import java.util.ResourceBundle;
 
 import Applicacation.Main;
+import Model.Cliente;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -13,7 +18,7 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-public class ClienteController {
+public class ClienteController implements Initializable{
 
     @FXML
     private TextField Contract_Code_Text;
@@ -45,7 +50,22 @@ public class ClienteController {
     @FXML
     private TextField Name_Client_Text;
 
-    public ClienteController(Object ob) {
+    private String name;
+    private String id;
+    private LocalDate date;
+    private String email;
+    private String contract_code;
+    private String phone;
+    private String adress;
+
+    public ClienteController(Cliente ob) {
+      contract_code = ob.getCod_Contrato();
+      adress = ob.getDir_Facturacion().toString();
+      phone = ob.getTel_Contacto().toString();
+      id = ob.getId().toString();
+      date = ob.getFecha_Registro();
+      email = ob.getEmail().toString();
+      name = ob.getNombre().toString();
     }
 
     public ClienteController() {
@@ -84,5 +104,16 @@ public class ClienteController {
       Stage stage = (Stage) Consult_Button.getScene().getWindow();
       stage.close();
   }
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+      Contract_Code_Text.setText(contract_code);
+      Fact_Text.setText(adress);
+      Phone_Client_Text.setText(phone);
+      Id_Client_Text.setText(id);
+      Date_Client.setValue(date);
+      Email_Client_Text.setText(email);
+      Name_Client_Text.setText(name);
+    }
 
 }

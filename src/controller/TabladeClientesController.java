@@ -43,9 +43,13 @@ public class TabladeClientesController implements Initializable{
 		
 		Client_Table.setItems(Empresa.clientes);
 		
-		Client_Table.setOnMouseClicked(event->{Object stClicked = Client_Table.getSelectionModel().getSelectedItem();
+		Client_Table.setOnMouseClicked(event->{Cliente stClicked = Client_Table.getSelectionModel().getSelectedItem();
 			try {
-                showClientInfo(stClicked);
+				if(stClicked!=null){
+					System.out.println(stClicked.getNombre());
+				
+                showClientInfo(stClicked);}
+				
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -64,7 +68,7 @@ public class TabladeClientesController implements Initializable{
         close();
     }
 
-    public void showClientInfo(Object ob) throws IOException {
+    public void showClientInfo(Cliente ob) throws IOException {
     	FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/ClientUI.fxml"));
 		loader.setController(new ClienteController(ob));
 		Parent parent = (Parent) loader.load();
