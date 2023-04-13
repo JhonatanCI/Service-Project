@@ -1,5 +1,6 @@
 package controller;
 
+import Model.Empresa;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -23,17 +24,8 @@ public class ServicioController {
     public DatePicker Date_Installation;
 
     @FXML
-    public TextField Service_State_Text;
-
-    @FXML
     public TextField Value_LastMoth_Text;
-
-    @FXML
-    public TextField Service_Code_Text;
-
-    @FXML
-    public TextField Measurer_Text;
-
+   
     @FXML
     public Button Inactivate_Service_Button;
 
@@ -45,20 +37,25 @@ public class ServicioController {
 
     @FXML
     public Button Delete_Button;
+    
+    @FXML
+    public TextField Service_Code_Text;
 
     @FXML
     void Delete_Service(ActionEvent event) {
-
+    	String cod_Contrato=Service_Code_Text.getText();
+    	Empresa.eliminarServicio(cod_Contrato);
     }
 
     @FXML
     void Inactivate_Service(ActionEvent event) {
-
+    	String cod_Contrato=Service_Code_Text.getText();
+    	Empresa.inhabilitarServicio(cod_Contrato);
     }
 
     @FXML
     void Update_Info(ActionEvent event) {
-
+    	Empresa.editarServicio(Service_Code_Text.getText(),Service_Adress_Text.getText(),Date_Installation.getValue(),Date_Fact.getValue(),Integer.parseInt(Value_ActMonth_Text.getText()),Integer.parseInt(Value_LastMoth_Text.getText()));
     }
 
 }

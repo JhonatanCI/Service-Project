@@ -7,14 +7,16 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="623.0" style="-fx-background-color: #fffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button fx:id="Clients_Button" layoutX="113.0" layoutY="170.0" mnemonicParsing="false" onAction="#ShowClients" prefHeight="61.0" prefWidth="120.0" text="Clientes" />
-      <Button fx:id="ListServices_Button" layoutX="324.0" layoutY="170.0" mnemonicParsing="false" onAction="#ShowServices" prefHeight="61.0" prefWidth="135.0" text="Lista de Servicios" />
+      <Button fx:id="Clients_Button" layoutX="53.0" layoutY="140.0" mnemonicParsing="false" onAction="#ShowClients" prefHeight="61.0" prefWidth="120.0" text="Lista de Clientes" />
+      <Button fx:id="ListServices_Button" layoutX="204.0" layoutY="140.0" mnemonicParsing="false" onAction="#ShowServices" prefHeight="61.0" prefWidth="135.0" text="Lista de Servicios" />
       <Text layoutX="173.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenido" wrappingWidth="196.669921875">
          <font>
             <Font size="35.0" />
          </font>
       </Text>
-      <Button fx:id="Create_Client_Button" layoutX="113.0" layoutY="267.0" mnemonicParsing="false" onAction="#Create_Client" prefHeight="61.0" prefWidth="120.0" text="Crear cliente" />
-      <Button layoutX="324.0" layoutY="267.0" mnemonicParsing="false" onAction="#Create_Service" prefHeight="61.0" prefWidth="135.0" text="Crear Servicio" />
+      <Button fx:id="Create_Client_Button" layoutX="53.0" layoutY="237.0" mnemonicParsing="false" onAction="#Create_Client" prefHeight="61.0" prefWidth="120.0" text="Crear cliente" />
+      <Button layoutX="204.0" layoutY="237.0" mnemonicParsing="false" onAction="#Create_Service" prefHeight="61.0" prefWidth="135.0" text="Crear Servicio" />
+      <Button layoutX="370.0" layoutY="140.0" mnemonicParsing="false" onAction="#SelectService" prefHeight="61.0" prefWidth="120.0" text="Servicios" />
+      <Button layoutX="370.0" layoutY="237.0" mnemonicParsing="false" onAction="#SelectClient" prefHeight="61.0" prefWidth="120.0" text="Clientes" />
    </children>
 </AnchorPane>
