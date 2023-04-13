@@ -14,37 +14,37 @@ public class ServicioController {
 	}
 
     @FXML
-    private TextField Service_Adress_Text;
+    public TextField Service_Adress_Text;
 
     @FXML
-    private TextField Value_ActMonth_Text;
+    public TextField Value_ActMonth_Text;
 
     @FXML
-    private DatePicker Date_Installation;
+    public DatePicker Date_Installation;
 
     @FXML
-    private TextField Service_State_Text;
+    public TextField Service_State_Text;
 
     @FXML
-    private TextField Value_LastMoth_Text;
+    public TextField Value_LastMoth_Text;
 
     @FXML
-    private TextField Service_Code_Text;
+    public TextField Service_Code_Text;
 
     @FXML
-    private TextField Measurer_Text;
+    public TextField Measurer_Text;
 
     @FXML
-    private Button Inactivate_Service_Button;
+    public Button Inactivate_Service_Button;
 
     @FXML
-    private DatePicker Date_Fact;
+    public DatePicker Date_Fact;
 
     @FXML
-    private Button Update_Button;
+    public Button Update_Button;
 
     @FXML
-    private Button Delete_Button;
+    public Button Delete_Button;
 
     @FXML
     void Delete_Service(ActionEvent event) {

@@ -19,7 +19,15 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 public class TabladeClientesController implements Initializable{
-    @FXML
+   
+	private Empresa empresa;
+	
+	public TabladeClientesController(Empresa empresa) {
+		this.empresa=empresa;
+	}
+	
+
+	@FXML
     private TableColumn<Cliente, String> Code_Column;
 
     @FXML
@@ -70,7 +78,7 @@ public class TabladeClientesController implements Initializable{
 
     public void showClientInfo(Cliente ob) throws IOException {
     	FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/ClientUI.fxml"));
-		loader.setController(new ClienteController(ob));
+		loader.setController(new CrearClienteController(empresa));
 		Parent parent = (Parent) loader.load();
 		Scene scene = new Scene(parent);
 		Stage stage = new Stage();

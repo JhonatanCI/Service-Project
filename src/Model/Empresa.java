@@ -10,7 +10,7 @@ public class Empresa {
 	private String direccion;
 	private String nombre;
 	public static ObservableList<Cliente> clientes = FXCollections.observableArrayList();
-
+	public static ObservableList<Servicio> servicios = FXCollections.observableArrayList();
 	public void registrarCliente(String nombre, String id, LocalDate f_R, String c_c, String d_F, String t_C, String e,Estado state) {
 		clientes.add(new Cliente(nombre,id,f_R,c_c,d_F,t_C,e,state));
 	}
@@ -37,17 +37,24 @@ public class Empresa {
 	public static Cliente consultarCliente(String id) {
 		Cliente cliente= new Cliente();
 		for (int i = 0; i <clientes.size(); i ++) {
-			if(id == clientes.get(i).getId()){
+			if(id.equalsIgnoreCase(clientes.get(i).getId())){
 				cliente = clientes.get(i);
 			}
 		  }
 		return cliente;
 	}
 
+	public static void addServClient(String id,Servicio servicio) {
+		Cliente cl = consultarCliente(id);
+		cl.addServicio(servicio);
+		servicios.add(servicio);
+		
+	}
+	
 	public int consultarClientePos(String id) {
 		int cliente = -1;
 		for (int i = 0; i <clientes.size(); i ++) {
-			if(id == clientes.get(i).getId()){
+			if(id.equalsIgnoreCase(clientes.get(i).getId())){
 				cliente = i;
 			}
 		  }
