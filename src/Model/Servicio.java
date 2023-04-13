@@ -1,25 +1,39 @@
 package Model;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class Servicio {
 
-	private String cod_Contrato;
 	private String dir_Instalacion;
-	private Date fecha_Instalacion;
-	private Date fecha_Facturacion;
+	private LocalDate fecha_Instalacion;
+	private LocalDate fecha_Facturacion;
 	private Boolean activo;
 	private String cod_medidor;
-	private int attribute;
 	private double val_MesActual;
 	private double val_MesAnterior;
+	private String idCliente;
 
-	public String getCod_Contrato() {
-		return this.cod_Contrato;
+	public Servicio(){}
+
+	public Servicio( String dir_Instalacion, LocalDate fecha_Instalacion, LocalDate fecha_Facturacion,
+			Boolean activo, String cod_medidor, double val_MesActual, double val_MesAnterior,String idCliente) {
+			this.dir_Instalacion = dir_Instalacion; 
+			this.fecha_Instalacion = fecha_Instalacion; 
+			this.fecha_Facturacion = fecha_Facturacion;
+			this.activo = activo;
+			this.cod_medidor= cod_medidor; 
+			this.val_MesActual = val_MesActual;
+			this.val_MesAnterior = val_MesAnterior;
+			this.idCliente = idCliente;
 	}
 
-	public void setCod_Contrato(String cod_Contrato) {
-		this.cod_Contrato = cod_Contrato;
+	public String getIdCliente() {
+		return this.idCliente;
+	}
+
+	public void setTdCliente(String idCliente) {
+		this.idCliente = idCliente;
 	}
 
 	public String getDir_Instalacion() {
@@ -30,19 +44,19 @@ public class Servicio {
 		this.dir_Instalacion = dir_Instalacion;
 	}
 
-	public Date getFecha_Instalacion() {
+	public LocalDate getFecha_Instalacion() {
 		return this.fecha_Instalacion;
 	}
 
-	public void setFecha_Instalacion(Date fecha_Instalacion) {
+	public void setFecha_Instalacion(LocalDate fecha_Instalacion) {
 		this.fecha_Instalacion = fecha_Instalacion;
 	}
 
-	public Date getFecha_Facturacion() {
+	public LocalDate getFecha_Facturacion() {
 		return this.fecha_Facturacion;
 	}
 
-	public void setFecha_Facturacion(Date fecha_Facturacion) {
+	public void setFecha_Facturacion(LocalDate fecha_Facturacion) {
 		this.fecha_Facturacion = fecha_Facturacion;
 	}
 
@@ -50,7 +64,6 @@ public class Servicio {
 		return this.activo;
 	}
 
-	
 	public void setActivo(Boolean activo) {
 		this.activo = activo;
 	}
@@ -59,17 +72,8 @@ public class Servicio {
 		return this.cod_medidor;
 	}
 
-	
 	public void setCod_medidor(String cod_medidor) {
 		this.cod_medidor = cod_medidor;
-	}
-
-	public int getAttribute() {
-		return this.attribute;
-	}
-
-	public void setAttribute(int attribute) {
-		this.attribute = attribute;
 	}
 
 	public double getVal_MesActual() {

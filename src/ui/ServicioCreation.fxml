@@ -8,12 +8,10 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="623.0" style="-fx-background-color: #fffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <TextField fx:id="Service_Code_Text" layoutX="37.0" layoutY="132.0" />
-      <Text layoutX="36.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo de contrato" />
-      <Text layoutX="207.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Direccion de instalacion" />
-      <TextField fx:id="Service_Adress_Text" layoutX="203.0" layoutY="132.0" />
-      <Text layoutX="377.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="fecha de instalacion" />
-      <DatePicker fx:id="Date_Installation" layoutX="377.0" layoutY="132.0" prefHeight="25.0" prefWidth="91.0" />
+      <Text layoutX="33.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Direccion de instalacion" />
+      <TextField fx:id="Service_Adress_Text" layoutX="37.0" layoutY="120.0" />
+      <Text layoutX="204.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="fecha de instalacion" />
+      <DatePicker fx:id="Date_Installation" layoutX="204.0" layoutY="120.0" prefHeight="25.0" prefWidth="91.0" />
       <Text layoutX="37.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estado activo" />
       <TextField fx:id="Service_State_Text" layoutX="37.0" layoutY="200.0" />
       <Text layoutX="203.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Medidor" />
@@ -29,7 +27,7 @@
          </font>
       </Text>
       <Button fx:id="Create_Button" layoutX="517.0" layoutY="326.0" mnemonicParsing="false" onAction="#Create_Info" text="Crear" />
-      <DatePicker fx:id="Date_Fact" layoutX="504.0" layoutY="132.0" prefHeight="25.0" prefWidth="91.0" />
-      <Text layoutX="504.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="fecha de facturacion" />
+      <DatePicker fx:id="Date_Fact" layoutX="332.0" layoutY="120.0" prefHeight="25.0" prefWidth="91.0" />
+      <Text layoutX="333.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="fecha de facturacion" />
    </children>
 </AnchorPane>
