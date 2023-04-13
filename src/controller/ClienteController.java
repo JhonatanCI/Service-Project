@@ -58,7 +58,10 @@ public class ClienteController implements Initializable{
     private String phone;
     private String adress;
 
+    private Cliente cl;
+
     public ClienteController(Cliente ob) {
+      cl = ob;
       contract_code = ob.getCod_Contrato();
       adress = ob.getDir_Facturacion().toString();
       phone = ob.getTel_Contacto().toString();
@@ -74,7 +77,7 @@ public class ClienteController implements Initializable{
     @FXML
     void CreateService(ActionEvent event) throws IOException {
 		FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/ServicioCreation.fxml"));
-		loader.setController(new CrearServicioController());
+		loader.setController(new CrearServicioController(cl));
 		Parent parent = (Parent) loader.load();
 		Scene scene = new Scene(parent);
 		Stage stage = new Stage();

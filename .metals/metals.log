@@ -36306,3 +36306,1744 @@ package controller;
 65 errors
 abr 12, 2023 6:27:42 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2023.04.12 19:00:03 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Empresa.java
+2023.04.12 19:00:04 WARN  Running javac-semanticdb failed for file:///C:/Users/jhona/OneDrive/Documentos/Icesi/Ingenieria%20de%20software/Project/src/Model/Empresa.java. Output:
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Empresa.java:5: error: package javafx.collections does not exist
+import javafx.collections.FXCollections;
+                         ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Empresa.java:6: error: package javafx.collections does not exist
+import javafx.collections.ObservableList;
+                         ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Empresa.java:12: error: cannot find symbol
+	public static ObservableList<Cliente> clientes = FXCollections.observableArrayList();
+	              ^
+  symbol:   class ObservableList
+  location: class Empresa
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Empresa.java:12: error: cannot find symbol
+	public static ObservableList<Cliente> clientes = FXCollections.observableArrayList();
+	                             ^
+  symbol:   class Cliente
+  location: class Empresa
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Empresa.java:14: error: cannot find symbol
+	public void registrarCliente(String nombre, String id, LocalDate f_R, String c_c, String d_F, String t_C, String e,Estado state) {
+	                                                                                                                   ^
+  symbol:   class Estado
+  location: class Empresa
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Empresa.java:19: error: cannot find symbol
+	public void editarCliente(String nombre, String id, LocalDate f_R, String c_c, String d_F, String t_C, String e,Estado state) {
+	                                                                                                                ^
+  symbol:   class Estado
+  location: class Empresa
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Empresa.java:37: error: cannot find symbol
+	public static Cliente consultarCliente(String id) {
+	              ^
+  symbol:   class Cliente
+  location: class Empresa
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Empresa.java:12: error: cannot find symbol
+	public static ObservableList<Cliente> clientes = FXCollections.observableArrayList();
+	                                                 ^
+  symbol:   variable FXCollections
+  location: class Empresa
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Empresa.java:15: error: cannot find symbol
+		clientes.add(new Cliente(nombre,id,f_R,c_c,d_F,t_C,e,state));
+		                 ^
+  symbol:   class Cliente
+  location: class Empresa
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Empresa.java:38: error: cannot find symbol
+		Cliente cliente= new Cliente();
+		^
+  symbol:   class Cliente
+  location: class Empresa
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Empresa.java:38: error: cannot find symbol
+		Cliente cliente= new Cliente();
+		                     ^
+  symbol:   class Cliente
+  location: class Empresa
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Empresa.java:1: error: semanticdb-javac: unknown flag 'de'
+package Model;
+^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Empresa.java:1: error: semanticdb-javac: unknown flag 'software\Project\src\Model'
+package Model;
+^
+13 errors
+2023.04.12 19:00:08 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java
+2023.04.12 19:00:09 WARN  Running javac-semanticdb failed for file:///C:/Users/jhona/OneDrive/Documentos/Icesi/Ingenieria%20de%20software/Project/src/Applicacation/Main.java. Output:
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:3: error: package controller does not exist
+import controller.StartMenuController;
+                 ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:4: error: package javafx.application does not exist
+import javafx.application.Application;
+                         ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:5: error: package javafx.fxml does not exist
+import javafx.fxml.FXMLLoader;
+                  ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:6: error: package javafx.scene does not exist
+import javafx.scene.Parent;
+                   ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:7: error: package javafx.scene does not exist
+import javafx.scene.Scene;
+                   ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:8: error: package javafx.stage does not exist
+import javafx.stage.Stage;
+                   ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:10: error: cannot find symbol
+public class Main extends Application{
+                          ^
+  symbol: class Application
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:18: error: cannot find symbol
+		public void start(Stage primaryStage) throws Exception {
+		                  ^
+  symbol:   class Stage
+  location: class Main
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:14: error: cannot find symbol
+		launch(args);
+		^
+  symbol:   method launch(String[])
+  location: class Main
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:17: error: method does not override or implement a method from a supertype
+		@Override
+		^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:20: error: cannot find symbol
+			FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/StartMenu.fxml"));
+			^
+  symbol:   class FXMLLoader
+  location: class Main
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:20: error: cannot find symbol
+			FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/StartMenu.fxml"));
+			                        ^
+  symbol:   class FXMLLoader
+  location: class Main
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:21: error: cannot find symbol
+			loader.setController(new StartMenuController());
+			                         ^
+  symbol:   class StartMenuController
+  location: class Main
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:22: error: cannot find symbol
+			Parent parent = (Parent) loader.load();
+			^
+  symbol:   class Parent
+  location: class Main
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:22: error: cannot find symbol
+			Parent parent = (Parent) loader.load();
+			                 ^
+  symbol:   class Parent
+  location: class Main
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:23: error: cannot find symbol
+			Scene scene = new Scene(parent);
+			^
+  symbol:   class Scene
+  location: class Main
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:23: error: cannot find symbol
+			Scene scene = new Scene(parent);
+			                  ^
+  symbol:   class Scene
+  location: class Main
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:24: error: cannot find symbol
+			Stage stage = new Stage();
+			^
+  symbol:   class Stage
+  location: class Main
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:24: error: cannot find symbol
+			Stage stage = new Stage();
+			                  ^
+  symbol:   class Stage
+  location: class Main
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:1: error: semanticdb-javac: unknown flag 'de'
+package Applicacation;
+^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:1: error: semanticdb-javac: unknown flag 'software\Project\src\Applicacation'
+package Applicacation;
+^
+21 errors
+2023.04.12 19:07:53 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\PlanComercial.java
+2023.04.12 19:07:53 WARN  Running javac-semanticdb failed for file:///C:/Users/jhona/OneDrive/Documentos/Icesi/Ingenieria%20de%20software/Project/src/Model/PlanComercial.java. Output:
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\PlanComercial.java:1: error: semanticdb-javac: unknown flag 'de'
+interface PlanComercial {
+^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\PlanComercial.java:1: error: semanticdb-javac: unknown flag 'software\Project\src\Model'
+interface PlanComercial {
+^
+2 errors
+abr 12, 2023 7:08:03 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1627
+abr 12, 2023 7:09:14 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1695
+abr 12, 2023 7:09:22 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1727
+abr 12, 2023 7:10:37 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1851
+abr 12, 2023 7:10:44 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1874
+2023.04.12 19:11:11 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\ServiciosEnum.java
+2023.04.12 19:11:12 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\ServiciosEnum.java
+2023.04.12 19:11:12 WARN  Running javac-semanticdb failed for file:///C:/Users/jhona/OneDrive/Documentos/Icesi/Ingenieria%20de%20software/Project/src/Model/ServiciosEnum.java. Output:
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\ServiciosEnum.java:1: error: semanticdb-javac: unknown flag 'de'
+package Model;
+^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\ServiciosEnum.java:1: error: semanticdb-javac: unknown flag 'software\Project\src\Model'
+package Model;
+^
+2 errors
+2023.04.12 19:11:13 WARN  Running javac-semanticdb failed for file:///C:/Users/jhona/OneDrive/Documentos/Icesi/Ingenieria%20de%20software/Project/src/Model/ServiciosEnum.java. Output:
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\ServiciosEnum.java:1: error: semanticdb-javac: unknown flag 'de'
+package Model;
+^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\ServiciosEnum.java:1: error: semanticdb-javac: unknown flag 'software\Project\src\Model'
+package Model;
+^
+2 errors
+2023.04.12 19:11:58 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\ServiciosEnum.java
+2023.04.12 19:11:59 WARN  Running javac-semanticdb failed for file:///C:/Users/jhona/OneDrive/Documentos/Icesi/Ingenieria%20de%20software/Project/src/Model/ServiciosEnum.java. Output:
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\ServiciosEnum.java:1: error: semanticdb-javac: unknown flag 'de'
+package Model;
+^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\ServiciosEnum.java:1: error: semanticdb-javac: unknown flag 'software\Project\src\Model'
+package Model;
+^
+2 errors
+2023.04.12 19:12:01 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\PlanComercial.java
+2023.04.12 19:12:01 WARN  Running javac-semanticdb failed for file:///C:/Users/jhona/OneDrive/Documentos/Icesi/Ingenieria%20de%20software/Project/src/Model/PlanComercial.java. Output:
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\PlanComercial.java:4: error: cannot find symbol
+  void crearPlan(String name, double value, double valorAdd,  ServiciosEnum servicios, double[] capacidades);
+                                                              ^
+  symbol:   class ServiciosEnum
+  location: interface PlanComercial
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\PlanComercial.java:1: error: semanticdb-javac: unknown flag 'de'
+package Model;
+^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\PlanComercial.java:1: error: semanticdb-javac: unknown flag 'software\Project\src\Model'
+package Model;
+^
+3 errors
+2023.04.12 19:12:13 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\ServiciosEnum.java
+2023.04.12 19:12:13 WARN  Running javac-semanticdb failed for file:///C:/Users/jhona/OneDrive/Documentos/Icesi/Ingenieria%20de%20software/Project/src/Model/ServiciosEnum.java. Output:
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\ServiciosEnum.java:1: error: semanticdb-javac: unknown flag 'de'
+package Model;
+^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\ServiciosEnum.java:1: error: semanticdb-javac: unknown flag 'software\Project\src\Model'
+package Model;
+^
+2 errors
+2023.04.12 19:18:38 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Contract.java
+2023.04.12 19:18:38 WARN  Running javac-semanticdb failed for file:///C:/Users/jhona/OneDrive/Documentos/Icesi/Ingenieria%20de%20software/Project/src/Model/Contract.java. Output:
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Contract.java:1: error: semanticdb-javac: unknown flag 'de'
+class Contract {
+^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Contract.java:1: error: semanticdb-javac: unknown flag 'software\Project\src\Model'
+class Contract {
+^
+2 errors
+2023.04.12 19:20:55 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Contract.java
+2023.04.12 19:20:56 WARN  Running javac-semanticdb failed for file:///C:/Users/jhona/OneDrive/Documentos/Icesi/Ingenieria%20de%20software/Project/src/Model/Contract.java. Output:
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Contract.java:1: error: semanticdb-javac: unknown flag 'de'
+package Model;
+^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Contract.java:1: error: semanticdb-javac: unknown flag 'software\Project\src\Model'
+package Model;
+^
+2 errors
+2023.04.12 19:33:18 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Agua.java
+2023.04.12 19:33:19 WARN  Running javac-semanticdb failed for file:///C:/Users/jhona/OneDrive/Documentos/Icesi/Ingenieria%20de%20software/Project/src/Model/Agua.java. Output:
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Agua.java:3: error: cannot find symbol
+public class Agua extends Servicio {
+                          ^
+  symbol: class Servicio
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Agua.java:1: error: semanticdb-javac: unknown flag 'de'
+package Model;
+^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Agua.java:1: error: semanticdb-javac: unknown flag 'software\Project\src\Model'
+package Model;
+^
+3 errors
+2023.04.12 19:33:20 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Cliente.java
+2023.04.12 19:33:23 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Energia.java
+2023.04.12 19:33:24 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Estado.java
+2023.04.12 19:33:24 WARN  Running javac-semanticdb failed for file:///C:/Users/jhona/OneDrive/Documentos/Icesi/Ingenieria%20de%20software/Project/src/Model/Energia.java. Output:
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Energia.java:3: error: cannot find symbol
+public class Energia extends Servicio {
+                             ^
+  symbol: class Servicio
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Energia.java:1: error: semanticdb-javac: unknown flag 'de'
+package Model;
+^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Energia.java:1: error: semanticdb-javac: unknown flag 'software\Project\src\Model'
+package Model;
+^
+3 errors
+2023.04.12 19:33:25 WARN  Running javac-semanticdb failed for file:///C:/Users/jhona/OneDrive/Documentos/Icesi/Ingenieria%20de%20software/Project/src/Model/Estado.java. Output:
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Estado.java:1: error: semanticdb-javac: unknown flag 'de'
+package Model;
+^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Estado.java:1: error: semanticdb-javac: unknown flag 'software\Project\src\Model'
+package Model;
+^
+2 errors
+2023.04.12 19:33:25 INFO  time: code lens generation in 1.16s
+2023.04.12 19:33:25 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Gas.java
+2023.04.12 19:33:26 WARN  Running javac-semanticdb failed for file:///C:/Users/jhona/OneDrive/Documentos/Icesi/Ingenieria%20de%20software/Project/src/Model/Gas.java. Output:
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Gas.java:3: error: cannot find symbol
+public class Gas extends Servicio {
+                         ^
+  symbol: class Servicio
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Gas.java:1: error: semanticdb-javac: unknown flag 'de'
+package Model;
+^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Gas.java:1: error: semanticdb-javac: unknown flag 'software\Project\src\Model'
+package Model;
+^
+3 errors
+2023.04.12 20:13:30 INFO  Shutting down server
+2023.04.12 20:13:30 INFO  shutting down Metals
+2023.04.12 20:13:30 INFO  Exiting server
+2023.04.12 20:13:51 INFO  Started: Metals version 0.11.11 in workspace 'C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project' for client Visual Studio Code 1.77.3.
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/C:/Users/jhona/AppData/Local/Coursier/cache/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.11.0/scribe-slf4j_2.13-3.11.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.04.12 20:13:51 INFO  time: initialize in 0.67s
+2023.04.12 20:13:53 WARN  Build server is not auto-connectable.
+2023.04.12 20:13:53 WARN  no build tool detected in workspace 'C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.04.12 20:13:53 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Contract.java
+2023.04.12 20:13:53 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Empresa.java
+abr 12, 2023 8:13:54 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5
+2023.04.12 20:13:54 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Energia.java
+2023.04.12 20:13:55 WARN  Running javac-semanticdb failed for file:///C:/Users/jhona/OneDrive/Documentos/Icesi/Ingenieria%20de%20software/Project/src/Model/Contract.java. Output:
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Contract.java:1: error: semanticdb-javac: unknown flag 'de'
+package Model;
+^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Contract.java:1: error: semanticdb-javac: unknown flag 'software\Project\src\Model'
+package Model;
+^
+2 errors
+2023.04.12 20:13:56 WARN  Running javac-semanticdb failed for file:///C:/Users/jhona/OneDrive/Documentos/Icesi/Ingenieria%20de%20software/Project/src/Model/Empresa.java. Output:
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Empresa.java:5: error: package javafx.collections does not exist
+import javafx.collections.FXCollections;
+                         ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Empresa.java:6: error: package javafx.collections does not exist
+import javafx.collections.ObservableList;
+                         ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Empresa.java:12: error: cannot find symbol
+	public static ObservableList<Cliente> clientes = FXCollections.observableArrayList();
+	              ^
+  symbol:   class ObservableList
+  location: class Empresa
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Empresa.java:12: error: cannot find symbol
+	public static ObservableList<Cliente> clientes = FXCollections.observableArrayList();
+	                             ^
+  symbol:   class Cliente
+  location: class Empresa
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Empresa.java:14: error: cannot find symbol
+	public void registrarCliente(String nombre, String id, LocalDate f_R, String c_c, String d_F, String t_C, String e,Estado state) {
+	                                                                                                                   ^
+  symbol:   class Estado
+  location: class Empresa
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Empresa.java:19: error: cannot find symbol
+	public void editarCliente(String nombre, String id, LocalDate f_R, String c_c, String d_F, String t_C, String e,Estado state) {
+	                                                                                                                ^
+  symbol:   class Estado
+  location: class Empresa
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Empresa.java:37: error: cannot find symbol
+	public static Cliente consultarCliente(String id) {
+	              ^
+  symbol:   class Cliente
+  location: class Empresa
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Empresa.java:12: error: cannot find symbol
+	public static ObservableList<Cliente> clientes = FXCollections.observableArrayList();
+	                                                 ^
+  symbol:   variable FXCollections
+  location: class Empresa
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Empresa.java:15: error: cannot find symbol
+		clientes.add(new Cliente(nombre,id,f_R,c_c,d_F,t_C,e,state));
+		                 ^
+  symbol:   class Cliente
+  location: class Empresa
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Empresa.java:38: error: cannot find symbol
+		Cliente cliente= new Cliente();
+		^
+  symbol:   class Cliente
+  location: class Empresa
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Empresa.java:38: error: cannot find symbol
+		Cliente cliente= new Cliente();
+		                     ^
+  symbol:   class Cliente
+  location: class Empresa
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Empresa.java:1: error: semanticdb-javac: unknown flag 'de'
+package Model;
+^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Empresa.java:1: error: semanticdb-javac: unknown flag 'software\Project\src\Model'
+package Model;
+^
+13 errors
+2023.04.12 20:13:56 INFO  time: code lens generation in 1.53s
+2023.04.12 20:13:56 WARN  Running javac-semanticdb failed for file:///C:/Users/jhona/OneDrive/Documentos/Icesi/Ingenieria%20de%20software/Project/src/Model/Energia.java. Output:
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Energia.java:3: error: cannot find symbol
+public class Energia extends Servicio {
+                             ^
+  symbol: class Servicio
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Energia.java:1: error: semanticdb-javac: unknown flag 'de'
+package Model;
+^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Energia.java:1: error: semanticdb-javac: unknown flag 'software\Project\src\Model'
+package Model;
+^
+3 errors
+2023.04.12 20:13:56 INFO  time: code lens generation in 2.5s
+2023.04.12 20:13:56 INFO  time: code lens generation in 2.64s
+2023.04.12 20:13:56 INFO  time: code lens generation in 2.89s
+2023.04.12 20:14:14 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Cliente.java
+2023.04.12 20:14:15 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Energia.java
+2023.04.12 20:14:15 WARN  Running javac-semanticdb failed for file:///C:/Users/jhona/OneDrive/Documentos/Icesi/Ingenieria%20de%20software/Project/src/Model/Cliente.java. Output:
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Cliente.java:6: error: package javafx.collections does not exist
+import javafx.collections.FXCollections;
+                         ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Cliente.java:7: error: package javafx.collections does not exist
+import javafx.collections.ObservableList;
+                         ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Cliente.java:11: error: cannot find symbol
+	public static ObservableList<Servicio> servicio =  FXCollections.observableArrayList();
+	              ^
+  symbol:   class ObservableList
+  location: class Cliente
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Cliente.java:11: error: cannot find symbol
+	public static ObservableList<Servicio> servicio =  FXCollections.observableArrayList();
+	                             ^
+  symbol:   class Servicio
+  location: class Cliente
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Cliente.java:19: error: cannot find symbol
+	private Estado state;
+	        ^
+  symbol:   class Estado
+  location: class Cliente
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Cliente.java:24: error: cannot find symbol
+	public Cliente(String nombre, String id, LocalDate fecha_Registro, String cod_Contrato, String dir_Facturacion,  String tel_Contacto, String email,Estado state){
+	                                                                                                                                                   ^
+  symbol:   class Estado
+  location: class Cliente
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Cliente.java:44: error: cannot find symbol
+	public Estado getState() {
+	       ^
+  symbol:   class Estado
+  location: class Cliente
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Cliente.java:49: error: cannot find symbol
+	public void setState(Estado state) {
+	                     ^
+  symbol:   class Estado
+  location: class Cliente
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Cliente.java:113: error: cannot find symbol
+	public Collection<Servicio> consultar_Servicios() {
+	                  ^
+  symbol:   class Servicio
+  location: class Cliente
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Cliente.java:11: error: cannot find symbol
+	public static ObservableList<Servicio> servicio =  FXCollections.observableArrayList();
+	                                                   ^
+  symbol:   variable FXCollections
+  location: class Cliente
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Cliente.java:1: error: semanticdb-javac: unknown flag 'de'
+package Model;
+^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Cliente.java:1: error: semanticdb-javac: unknown flag 'software\Project\src\Model'
+package Model;
+^
+12 errors
+2023.04.12 20:14:15 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Estado.java
+2023.04.12 20:14:15 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Gas.java
+2023.04.12 20:14:16 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\PlanComercial.java
+2023.04.12 20:14:16 WARN  Running javac-semanticdb failed for file:///C:/Users/jhona/OneDrive/Documentos/Icesi/Ingenieria%20de%20software/Project/src/Model/Estado.java. Output:
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Estado.java:1: error: semanticdb-javac: unknown flag 'de'
+package Model;
+^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Estado.java:1: error: semanticdb-javac: unknown flag 'software\Project\src\Model'
+package Model;
+^
+2 errors
+2023.04.12 20:14:16 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\ServiciosEnum.java
+2023.04.12 20:14:17 WARN  Running javac-semanticdb failed for file:///C:/Users/jhona/OneDrive/Documentos/Icesi/Ingenieria%20de%20software/Project/src/Model/PlanComercial.java. Output:
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\PlanComercial.java:4: error: cannot find symbol
+  void crearPlan(String name, double value, double valorAdd,  ServiciosEnum servicios, double[] capacidades);
+                                                              ^
+  symbol:   class ServiciosEnum
+  location: interface PlanComercial
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\PlanComercial.java:1: error: semanticdb-javac: unknown flag 'de'
+package Model;
+^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\PlanComercial.java:1: error: semanticdb-javac: unknown flag 'software\Project\src\Model'
+package Model;
+^
+3 errors
+2023.04.12 20:14:16 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Servicio.java
+2023.04.12 20:14:18 WARN  Running javac-semanticdb failed for file:///C:/Users/jhona/OneDrive/Documentos/Icesi/Ingenieria%20de%20software/Project/src/Model/Gas.java. Output:
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Gas.java:3: error: cannot find symbol
+public class Gas extends Servicio {
+                         ^
+  symbol: class Servicio
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Gas.java:1: error: semanticdb-javac: unknown flag 'de'
+package Model;
+^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Gas.java:1: error: semanticdb-javac: unknown flag 'software\Project\src\Model'
+package Model;
+^
+3 errors
+2023.04.12 20:14:18 INFO  time: code lens generation in 1.96s
+2023.04.12 20:14:18 INFO  time: code lens generation in 2.35s
+2023.04.12 20:14:18 WARN  Running javac-semanticdb failed for file:///C:/Users/jhona/OneDrive/Documentos/Icesi/Ingenieria%20de%20software/Project/src/Model/Servicio.java. Output:
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Servicio.java:1: error: semanticdb-javac: unknown flag 'de'
+package Model;
+^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Servicio.java:1: error: semanticdb-javac: unknown flag 'software\Project\src\Model'
+package Model;
+^
+2 errors
+2023.04.12 20:14:18 INFO  time: code lens generation in 1.2s
+2023.04.12 20:14:19 WARN  Running javac-semanticdb failed for file:///C:/Users/jhona/OneDrive/Documentos/Icesi/Ingenieria%20de%20software/Project/src/Model/ServiciosEnum.java. Output:
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\ServiciosEnum.java:1: error: semanticdb-javac: unknown flag 'de'
+package Model;
+^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\ServiciosEnum.java:1: error: semanticdb-javac: unknown flag 'software\Project\src\Model'
+package Model;
+^
+2 errors
+2023.04.12 20:14:19 INFO  time: code lens generation in 2.58s
+2023.04.12 20:14:19 INFO  time: code lens generation in 2.99s
+2023.04.12 20:14:35 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java
+2023.04.12 20:14:36 WARN  Running javac-semanticdb failed for file:///C:/Users/jhona/OneDrive/Documentos/Icesi/Ingenieria%20de%20software/Project/src/controller/CrearServicioController.java. Output:
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:5: error: package Applicacation does not exist
+import Applicacation.Main;
+                    ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:6: error: package javafx.event does not exist
+import javafx.event.ActionEvent;
+                   ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:7: error: package javafx.fxml does not exist
+import javafx.fxml.FXML;
+                  ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:8: error: package javafx.fxml does not exist
+import javafx.fxml.FXMLLoader;
+                  ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:9: error: package javafx.scene does not exist
+import javafx.scene.Parent;
+                   ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:10: error: package javafx.scene does not exist
+import javafx.scene.Scene;
+                   ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:11: error: package javafx.scene.control does not exist
+import javafx.scene.control.Alert;
+                           ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:12: error: package javafx.scene.control does not exist
+import javafx.scene.control.Button;
+                           ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:13: error: package javafx.scene.control does not exist
+import javafx.scene.control.DatePicker;
+                           ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:14: error: package javafx.scene.control does not exist
+import javafx.scene.control.TextField;
+                           ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:15: error: package javafx.stage does not exist
+import javafx.stage.Stage;
+                   ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:21: error: cannot find symbol
+    private TextField Service_Adress_Text;
+            ^
+  symbol:   class TextField
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:24: error: cannot find symbol
+    private TextField Value_ActMonth_Text;
+            ^
+  symbol:   class TextField
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:27: error: cannot find symbol
+    private Button Return_Button;
+            ^
+  symbol:   class Button
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:30: error: cannot find symbol
+    private Button Create_Button;
+            ^
+  symbol:   class Button
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:33: error: cannot find symbol
+    private DatePicker Date_Installation;
+            ^
+  symbol:   class DatePicker
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:36: error: cannot find symbol
+    private TextField Service_State_Text;
+            ^
+  symbol:   class TextField
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:39: error: cannot find symbol
+    private TextField Value_LastMoth_Text;
+            ^
+  symbol:   class TextField
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:42: error: cannot find symbol
+    private TextField Service_Code_Text;
+            ^
+  symbol:   class TextField
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:45: error: cannot find symbol
+    private TextField Measurer_Text;
+            ^
+  symbol:   class TextField
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:48: error: cannot find symbol
+    private DatePicker Date_Fact;
+            ^
+  symbol:   class DatePicker
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:51: error: cannot find symbol
+    void Return_Service(ActionEvent event) throws IOException {
+                        ^
+  symbol:   class ActionEvent
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:63: error: cannot find symbol
+    void Create_Info(ActionEvent event) {
+                     ^
+  symbol:   class ActionEvent
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:20: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:23: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:26: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:29: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:32: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:35: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:38: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:41: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:44: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:47: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:50: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:62: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:52: error: cannot find symbol
+        FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/ClientUI.fxml"));
+        ^
+  symbol:   class FXMLLoader
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:52: error: cannot find symbol
+        FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/ClientUI.fxml"));
+                                ^
+  symbol:   class FXMLLoader
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:52: error: cannot find symbol
+        FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/ClientUI.fxml"));
+                                           ^
+  symbol:   class Main
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:53: error: cannot find symbol
+		loader.setController(new ClienteController());
+		                         ^
+  symbol:   class ClienteController
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:54: error: cannot find symbol
+		Parent parent = (Parent) loader.load();
+		^
+  symbol:   class Parent
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:54: error: cannot find symbol
+		Parent parent = (Parent) loader.load();
+		                 ^
+  symbol:   class Parent
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:55: error: cannot find symbol
+		Scene scene = new Scene(parent);
+		^
+  symbol:   class Scene
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:55: error: cannot find symbol
+		Scene scene = new Scene(parent);
+		                  ^
+  symbol:   class Scene
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:56: error: cannot find symbol
+		Stage stage = new Stage();
+		^
+  symbol:   class Stage
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:56: error: cannot find symbol
+		Stage stage = new Stage();
+		                  ^
+  symbol:   class Stage
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:65: error: cannot find symbol
+        TextField[] nulls = {Service_Adress_Text,Value_ActMonth_Text,Service_State_Text,Service_Code_Text};
+        ^
+  symbol:   class TextField
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:74: error: cannot find symbol
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            ^
+  symbol:   class Alert
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:74: error: cannot find symbol
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+                              ^
+  symbol:   class Alert
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:74: error: package Alert does not exist
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+                                         ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:83: error: cannot find symbol
+        Stage stage = (Stage) Return_Button.getScene().getWindow();
+        ^
+  symbol:   class Stage
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:83: error: cannot find symbol
+        Stage stage = (Stage) Return_Button.getScene().getWindow();
+                       ^
+  symbol:   class Stage
+  location: class CrearServicioController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:1: error: semanticdb-javac: unknown flag 'de'
+package controller;
+^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java:1: error: semanticdb-javac: unknown flag 'software\Project\src\controller'
+package controller;
+^
+53 errors
+2023.04.12 20:14:36 INFO  time: code lens generation in 1.03s
+2023.04.12 20:14:42 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java
+2023.04.12 20:14:43 WARN  Running javac-semanticdb failed for file:///C:/Users/jhona/OneDrive/Documentos/Icesi/Ingenieria%20de%20software/Project/src/controller/CrearClienteController.java. Output:
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:5: error: package Applicacation does not exist
+import Applicacation.Main;
+                    ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:6: error: package Model does not exist
+import Model.Cliente;
+            ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:7: error: package Model does not exist
+import Model.Empresa;
+            ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:8: error: package Model does not exist
+import Model.Estado;
+            ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:9: error: package javafx.event does not exist
+import javafx.event.ActionEvent;
+                   ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:10: error: package javafx.fxml does not exist
+import javafx.fxml.FXML;
+                  ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:11: error: package javafx.fxml does not exist
+import javafx.fxml.FXMLLoader;
+                  ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:12: error: package javafx.scene does not exist
+import javafx.scene.Parent;
+                   ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:13: error: package javafx.scene does not exist
+import javafx.scene.Scene;
+                   ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:14: error: package javafx.scene.control does not exist
+import javafx.scene.control.Alert;
+                           ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:15: error: package javafx.scene.control does not exist
+import javafx.scene.control.Button;
+                           ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:16: error: package javafx.scene.control does not exist
+import javafx.scene.control.DatePicker;
+                           ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:17: error: package javafx.scene.control does not exist
+import javafx.scene.control.TextField;
+                           ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:18: error: package javafx.stage does not exist
+import javafx.stage.Stage;
+                   ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:23: error: cannot find symbol
+    private Button Return_Button;
+            ^
+  symbol:   class Button
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:26: error: cannot find symbol
+    private Button Create_Button;
+            ^
+  symbol:   class Button
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:29: error: cannot find symbol
+    private TextField Phone_Text;
+            ^
+  symbol:   class TextField
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:32: error: cannot find symbol
+    private TextField Adress_Text;
+            ^
+  symbol:   class TextField
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:35: error: cannot find symbol
+    private TextField State_Text;
+            ^
+  symbol:   class TextField
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:38: error: cannot find symbol
+    private DatePicker Date_Fact;
+            ^
+  symbol:   class DatePicker
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:41: error: cannot find symbol
+    private TextField CodContract_Text;
+            ^
+  symbol:   class TextField
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:44: error: cannot find symbol
+    private TextField Email_Text;
+            ^
+  symbol:   class TextField
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:47: error: cannot find symbol
+    private TextField Client_Code_Text;
+            ^
+  symbol:   class TextField
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:50: error: cannot find symbol
+    private TextField Name_Text;
+            ^
+  symbol:   class TextField
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:53: error: cannot find symbol
+    void Return_Service(ActionEvent event) throws IOException {
+                        ^
+  symbol:   class ActionEvent
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:58: error: cannot find symbol
+    void Create_Info(ActionEvent event) {
+                     ^
+  symbol:   class ActionEvent
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:22: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:25: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:28: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:31: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:34: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:37: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:40: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:43: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:46: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:49: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:52: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:57: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:61: error: cannot find symbol
+        Estado state=Estado.POTENCIAL;
+        ^
+  symbol:   class Estado
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:61: error: cannot find symbol
+        Estado state=Estado.POTENCIAL;
+                     ^
+  symbol:   variable Estado
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:63: error: cannot find symbol
+        TextField[] nulls = {Phone_Text,Adress_Text,CodContract_Text,Email_Text,Client_Code_Text,Name_Text};
+        ^
+  symbol:   class TextField
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:74: error: cannot find symbol
+                state = Estado.POTENCIAL;
+                        ^
+  symbol:   variable Estado
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:78: error: cannot find symbol
+                state = Estado.PAZ_Y_SALVO;
+                        ^
+  symbol:   variable Estado
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:82: error: cannot find symbol
+                state = Estado.DEUDA;
+                        ^
+  symbol:   variable Estado
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:86: error: cannot find symbol
+                state = Estado.MOROSO;
+                        ^
+  symbol:   variable Estado
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:90: error: cannot find symbol
+                state = Estado.RETIRADO;
+                        ^
+  symbol:   variable Estado
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:94: error: cannot find symbol
+                state = Estado.CARTERA_CASTIGADA;
+                        ^
+  symbol:   variable Estado
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:101: error: cannot find symbol
+            Cliente newClient = new Cliente(Name_Text.getText(),Client_Code_Text.getText(),Date_Fact.getValue(),CodContract_Text.getText(),Adress_Text.getText(),
+            ^
+  symbol:   class Cliente
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:101: error: cannot find symbol
+            Cliente newClient = new Cliente(Name_Text.getText(),Client_Code_Text.getText(),Date_Fact.getValue(),CodContract_Text.getText(),Adress_Text.getText(),
+                                    ^
+  symbol:   class Cliente
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:104: error: package Empresa does not exist
+            Empresa.clientes.add(newClient);
+                   ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:106: error: cannot find symbol
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            ^
+  symbol:   class Alert
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:106: error: cannot find symbol
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                              ^
+  symbol:   class Alert
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:106: error: package Alert does not exist
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                                         ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:122: error: cannot find symbol
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            ^
+  symbol:   class Alert
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:122: error: cannot find symbol
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+                              ^
+  symbol:   class Alert
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:122: error: package Alert does not exist
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+                                         ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:132: error: cannot find symbol
+        Stage stage = (Stage) Return_Button.getScene().getWindow();
+        ^
+  symbol:   class Stage
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:132: error: cannot find symbol
+        Stage stage = (Stage) Return_Button.getScene().getWindow();
+                       ^
+  symbol:   class Stage
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:137: error: cannot find symbol
+        FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/StartMenu.fxml"));
+        ^
+  symbol:   class FXMLLoader
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:137: error: cannot find symbol
+        FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/StartMenu.fxml"));
+                                ^
+  symbol:   class FXMLLoader
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:137: error: cannot find symbol
+        FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/StartMenu.fxml"));
+                                           ^
+  symbol:   class Main
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:138: error: cannot find symbol
+		loader.setController(new StartMenuController());
+		                         ^
+  symbol:   class StartMenuController
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:139: error: cannot find symbol
+		Parent parent = (Parent) loader.load();
+		^
+  symbol:   class Parent
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:139: error: cannot find symbol
+		Parent parent = (Parent) loader.load();
+		                 ^
+  symbol:   class Parent
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:140: error: cannot find symbol
+		Scene scene = new Scene(parent);
+		^
+  symbol:   class Scene
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:140: error: cannot find symbol
+		Scene scene = new Scene(parent);
+		                  ^
+  symbol:   class Scene
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:141: error: cannot find symbol
+		Stage stage = new Stage();
+		^
+  symbol:   class Stage
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:141: error: cannot find symbol
+		Stage stage = new Stage();
+		                  ^
+  symbol:   class Stage
+  location: class CrearClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:1: error: semanticdb-javac: unknown flag 'de'
+package controller;
+^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearClienteController.java:1: error: semanticdb-javac: unknown flag 'software\Project\src\controller'
+package controller;
+^
+70 errors
+2023.04.12 20:15:02 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java
+2023.04.12 20:15:03 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java
+2023.04.12 20:15:03 WARN  Running javac-semanticdb failed for file:///C:/Users/jhona/OneDrive/Documentos/Icesi/Ingenieria%20de%20software/Project/src/controller/TabladeClientesController.java. Output:
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:6: error: package javafx.fxml does not exist
+import javafx.fxml.Initializable;
+                  ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:7: error: package Applicacation does not exist
+import Applicacation.Main;
+                    ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:8: error: package Model does not exist
+import Model.Cliente;
+            ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:9: error: package Model does not exist
+import Model.Empresa;
+            ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:10: error: package javafx.event does not exist
+import javafx.event.ActionEvent;
+                   ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:11: error: package javafx.fxml does not exist
+import javafx.fxml.FXML;
+                  ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:12: error: package javafx.fxml does not exist
+import javafx.fxml.FXMLLoader;
+                  ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:13: error: package javafx.scene does not exist
+import javafx.scene.Parent;
+                   ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:14: error: package javafx.scene does not exist
+import javafx.scene.Scene;
+                   ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:15: error: package javafx.scene.control does not exist
+import javafx.scene.control.Button;
+                           ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:16: error: package javafx.scene.control does not exist
+import javafx.scene.control.TableColumn;
+                           ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:17: error: package javafx.scene.control does not exist
+import javafx.scene.control.TableView;
+                           ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:18: error: package javafx.scene.control.cell does not exist
+import javafx.scene.control.cell.PropertyValueFactory;
+                                ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:19: error: package javafx.stage does not exist
+import javafx.stage.Stage;
+                   ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:21: error: cannot find symbol
+public class TabladeClientesController implements Initializable{
+                                                  ^
+  symbol: class Initializable
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:23: error: cannot find symbol
+    private TableColumn<Cliente, String> Code_Column;
+            ^
+  symbol:   class TableColumn
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:23: error: cannot find symbol
+    private TableColumn<Cliente, String> Code_Column;
+                        ^
+  symbol:   class Cliente
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:26: error: cannot find symbol
+    private Button Return_Button;
+            ^
+  symbol:   class Button
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:29: error: cannot find symbol
+    private TableColumn<Cliente, String> Name_Colimn;
+            ^
+  symbol:   class TableColumn
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:29: error: cannot find symbol
+    private TableColumn<Cliente, String> Name_Colimn;
+                        ^
+  symbol:   class Cliente
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:32: error: cannot find symbol
+    private TableView<Cliente> Client_Table;
+            ^
+  symbol:   class TableView
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:32: error: cannot find symbol
+    private TableView<Cliente> Client_Table;
+                      ^
+  symbol:   class Cliente
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:35: error: cannot find symbol
+    private TableColumn<Cliente, String> Email_Coluimn;
+            ^
+  symbol:   class TableColumn
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:35: error: cannot find symbol
+    private TableColumn<Cliente, String> Email_Coluimn;
+                        ^
+  symbol:   class Cliente
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:60: error: cannot find symbol
+    void Return(ActionEvent event) throws IOException {
+                ^
+  symbol:   class ActionEvent
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:71: error: cannot find symbol
+    public void showClientInfo(Cliente ob) throws IOException {
+                               ^
+  symbol:   class Cliente
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:22: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:25: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:28: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:31: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:34: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:59: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:37: error: method does not override or implement a method from a supertype
+	@Override
+	^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:40: error: cannot find symbol
+    	Code_Column.setCellValueFactory(new PropertyValueFactory<>("id"));
+    	                                    ^
+  symbol:   class PropertyValueFactory
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:41: error: cannot find symbol
+    	Name_Colimn.setCellValueFactory(new PropertyValueFactory<>("nombre"));
+    	                                    ^
+  symbol:   class PropertyValueFactory
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:42: error: cannot find symbol
+    	Email_Coluimn.setCellValueFactory(new PropertyValueFactory<>("email"));
+    	                                      ^
+  symbol:   class PropertyValueFactory
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:44: error: cannot find symbol
+		Client_Table.setItems(Empresa.clientes);
+		                      ^
+  symbol:   variable Empresa
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:46: error: cannot find symbol
+		Client_Table.setOnMouseClicked(event->{Cliente stClicked = Client_Table.getSelectionModel().getSelectedItem();
+		                                       ^
+  symbol:   class Cliente
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:61: error: cannot find symbol
+		FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/StartMenu.fxml"));
+		^
+  symbol:   class FXMLLoader
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:61: error: cannot find symbol
+		FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/StartMenu.fxml"));
+		                        ^
+  symbol:   class FXMLLoader
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:61: error: cannot find symbol
+		FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/StartMenu.fxml"));
+		                                   ^
+  symbol:   class Main
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:62: error: cannot find symbol
+		loader.setController(new StartMenuController());
+		                         ^
+  symbol:   class StartMenuController
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:63: error: cannot find symbol
+		Parent parent = (Parent) loader.load();
+		^
+  symbol:   class Parent
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:63: error: cannot find symbol
+		Parent parent = (Parent) loader.load();
+		                 ^
+  symbol:   class Parent
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:64: error: cannot find symbol
+		Scene scene = new Scene(parent);
+		^
+  symbol:   class Scene
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:64: error: cannot find symbol
+		Scene scene = new Scene(parent);
+		                  ^
+  symbol:   class Scene
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:65: error: cannot find symbol
+		Stage stage = new Stage();
+		^
+  symbol:   class Stage
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:65: error: cannot find symbol
+		Stage stage = new Stage();
+		                  ^
+  symbol:   class Stage
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:72: error: cannot find symbol
+    	FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/ClientUI.fxml"));
+    	^
+  symbol:   class FXMLLoader
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:72: error: cannot find symbol
+    	FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/ClientUI.fxml"));
+    	                        ^
+  symbol:   class FXMLLoader
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:72: error: cannot find symbol
+    	FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/ClientUI.fxml"));
+    	                                   ^
+  symbol:   class Main
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:73: error: cannot find symbol
+		loader.setController(new ClienteController(ob));
+		                         ^
+  symbol:   class ClienteController
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:74: error: cannot find symbol
+		Parent parent = (Parent) loader.load();
+		^
+  symbol:   class Parent
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:74: error: cannot find symbol
+		Parent parent = (Parent) loader.load();
+		                 ^
+  symbol:   class Parent
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:75: error: cannot find symbol
+		Scene scene = new Scene(parent);
+		^
+  symbol:   class Scene
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:75: error: cannot find symbol
+		Scene scene = new Scene(parent);
+		                  ^
+  symbol:   class Scene
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:76: error: cannot find symbol
+		Stage stage = new Stage();
+		^
+  symbol:   class Stage
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:76: error: cannot find symbol
+		Stage stage = new Stage();
+		                  ^
+  symbol:   class Stage
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:83: error: cannot find symbol
+        Stage stage = (Stage) Return_Button.getScene().getWindow();
+        ^
+  symbol:   class Stage
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:83: error: cannot find symbol
+        Stage stage = (Stage) Return_Button.getScene().getWindow();
+                       ^
+  symbol:   class Stage
+  location: class TabladeClientesController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:1: error: semanticdb-javac: unknown flag 'de'
+package controller;
+^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\TabladeClientesController.java:1: error: semanticdb-javac: unknown flag 'software\Project\src\controller'
+package controller;
+^
+62 errors
+2023.04.12 20:15:05 WARN  Running javac-semanticdb failed for file:///C:/Users/jhona/OneDrive/Documentos/Icesi/Ingenieria%20de%20software/Project/src/controller/ClienteController.java. Output:
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:8: error: package Applicacation does not exist
+import Applicacation.Main;
+                    ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:9: error: package Model does not exist
+import Model.Cliente;
+            ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:10: error: package javafx.event does not exist
+import javafx.event.ActionEvent;
+                   ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:11: error: package javafx.fxml does not exist
+import javafx.fxml.FXML;
+                  ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:12: error: package javafx.fxml does not exist
+import javafx.fxml.FXMLLoader;
+                  ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:13: error: package javafx.fxml does not exist
+import javafx.fxml.Initializable;
+                  ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:14: error: package javafx.scene does not exist
+import javafx.scene.Parent;
+                   ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:15: error: package javafx.scene does not exist
+import javafx.scene.Scene;
+                   ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:16: error: package javafx.scene.control does not exist
+import javafx.scene.control.Button;
+                           ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:17: error: package javafx.scene.control does not exist
+import javafx.scene.control.DatePicker;
+                           ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:18: error: package javafx.scene.control does not exist
+import javafx.scene.control.TextField;
+                           ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:19: error: package javafx.stage does not exist
+import javafx.stage.Stage;
+                   ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:21: error: cannot find symbol
+public class ClienteController implements Initializable{
+                                          ^
+  symbol: class Initializable
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:24: error: cannot find symbol
+    private TextField Contract_Code_Text;
+            ^
+  symbol:   class TextField
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:27: error: cannot find symbol
+    private Button Create_Button;
+            ^
+  symbol:   class Button
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:30: error: cannot find symbol
+    private TextField Fact_Text;
+            ^
+  symbol:   class TextField
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:33: error: cannot find symbol
+    private TextField Phone_Client_Text;
+            ^
+  symbol:   class TextField
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:36: error: cannot find symbol
+    private TextField Id_Client_Text;
+            ^
+  symbol:   class TextField
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:39: error: cannot find symbol
+    private Button Update_Bytton;
+            ^
+  symbol:   class Button
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:42: error: cannot find symbol
+    private DatePicker Date_Client;
+            ^
+  symbol:   class DatePicker
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:45: error: cannot find symbol
+    private TextField Email_Client_Text;
+            ^
+  symbol:   class TextField
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:48: error: cannot find symbol
+    private Button Consult_Button;
+            ^
+  symbol:   class Button
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:51: error: cannot find symbol
+    private TextField Name_Client_Text;
+            ^
+  symbol:   class TextField
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:61: error: cannot find symbol
+    public ClienteController(Cliente ob) {
+                             ^
+  symbol:   class Cliente
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:75: error: cannot find symbol
+    void CreateService(ActionEvent event) throws IOException {
+                       ^
+  symbol:   class ActionEvent
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:87: error: cannot find symbol
+    void Consult_Service(ActionEvent event) throws IOException {
+                         ^
+  symbol:   class ActionEvent
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:99: error: cannot find symbol
+    void Update_Info(ActionEvent event) {
+                     ^
+  symbol:   class ActionEvent
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:23: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:26: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:29: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:32: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:35: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:38: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:41: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:44: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:47: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:50: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:74: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:86: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:98: error: cannot find symbol
+    @FXML
+     ^
+  symbol:   class FXML
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:76: error: cannot find symbol
+		FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/ServicioCreation.fxml"));
+		^
+  symbol:   class FXMLLoader
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:76: error: cannot find symbol
+		FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/ServicioCreation.fxml"));
+		                        ^
+  symbol:   class FXMLLoader
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:76: error: cannot find symbol
+		FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/ServicioCreation.fxml"));
+		                                   ^
+  symbol:   class Main
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:77: error: cannot find symbol
+		loader.setController(new CrearServicioController());
+		                         ^
+  symbol:   class CrearServicioController
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:78: error: cannot find symbol
+		Parent parent = (Parent) loader.load();
+		^
+  symbol:   class Parent
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:78: error: cannot find symbol
+		Parent parent = (Parent) loader.load();
+		                 ^
+  symbol:   class Parent
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:79: error: cannot find symbol
+		Scene scene = new Scene(parent);
+		^
+  symbol:   class Scene
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:79: error: cannot find symbol
+		Scene scene = new Scene(parent);
+		                  ^
+  symbol:   class Scene
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:80: error: cannot find symbol
+		Stage stage = new Stage();
+		^
+  symbol:   class Stage
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:80: error: cannot find symbol
+		Stage stage = new Stage();
+		                  ^
+  symbol:   class Stage
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:88: error: cannot find symbol
+		FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/TabladeServicios.fxml"));
+		^
+  symbol:   class FXMLLoader
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:88: error: cannot find symbol
+		FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/TabladeServicios.fxml"));
+		                        ^
+  symbol:   class FXMLLoader
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:88: error: cannot find symbol
+		FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/TabladeServicios.fxml"));
+		                                   ^
+  symbol:   class Main
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:89: error: cannot find symbol
+		loader.setController(new TabladeServiciosController());
+		                         ^
+  symbol:   class TabladeServiciosController
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:90: error: cannot find symbol
+		Parent parent = (Parent) loader.load();
+		^
+  symbol:   class Parent
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:90: error: cannot find symbol
+		Parent parent = (Parent) loader.load();
+		                 ^
+  symbol:   class Parent
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:91: error: cannot find symbol
+		Scene scene = new Scene(parent);
+		^
+  symbol:   class Scene
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:91: error: cannot find symbol
+		Scene scene = new Scene(parent);
+		                  ^
+  symbol:   class Scene
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:92: error: cannot find symbol
+		Stage stage = new Stage();
+		^
+  symbol:   class Stage
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:92: error: cannot find symbol
+		Stage stage = new Stage();
+		                  ^
+  symbol:   class Stage
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:104: error: cannot find symbol
+      Stage stage = (Stage) Consult_Button.getScene().getWindow();
+      ^
+  symbol:   class Stage
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:104: error: cannot find symbol
+      Stage stage = (Stage) Consult_Button.getScene().getWindow();
+                     ^
+  symbol:   class Stage
+  location: class ClienteController
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:108: error: method does not override or implement a method from a supertype
+    @Override
+    ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:1: error: semanticdb-javac: unknown flag 'de'
+package controller;
+^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\ClienteController.java:1: error: semanticdb-javac: unknown flag 'software\Project\src\controller'
+package controller;
+^
+65 errors
+2023.04.12 20:15:05 INFO  time: code lens generation in 2.55s
+2023.04.12 20:15:09 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java
+2023.04.12 20:15:10 WARN  Running javac-semanticdb failed for file:///C:/Users/jhona/OneDrive/Documentos/Icesi/Ingenieria%20de%20software/Project/src/Applicacation/Main.java. Output:
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:3: error: package controller does not exist
+import controller.StartMenuController;
+                 ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:4: error: package javafx.application does not exist
+import javafx.application.Application;
+                         ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:5: error: package javafx.fxml does not exist
+import javafx.fxml.FXMLLoader;
+                  ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:6: error: package javafx.scene does not exist
+import javafx.scene.Parent;
+                   ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:7: error: package javafx.scene does not exist
+import javafx.scene.Scene;
+                   ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:8: error: package javafx.stage does not exist
+import javafx.stage.Stage;
+                   ^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:10: error: cannot find symbol
+public class Main extends Application{
+                          ^
+  symbol: class Application
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:18: error: cannot find symbol
+		public void start(Stage primaryStage) throws Exception {
+		                  ^
+  symbol:   class Stage
+  location: class Main
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:14: error: cannot find symbol
+		launch(args);
+		^
+  symbol:   method launch(String[])
+  location: class Main
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:17: error: method does not override or implement a method from a supertype
+		@Override
+		^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:20: error: cannot find symbol
+			FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/StartMenu.fxml"));
+			^
+  symbol:   class FXMLLoader
+  location: class Main
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:20: error: cannot find symbol
+			FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/StartMenu.fxml"));
+			                        ^
+  symbol:   class FXMLLoader
+  location: class Main
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:21: error: cannot find symbol
+			loader.setController(new StartMenuController());
+			                         ^
+  symbol:   class StartMenuController
+  location: class Main
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:22: error: cannot find symbol
+			Parent parent = (Parent) loader.load();
+			^
+  symbol:   class Parent
+  location: class Main
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:22: error: cannot find symbol
+			Parent parent = (Parent) loader.load();
+			                 ^
+  symbol:   class Parent
+  location: class Main
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:23: error: cannot find symbol
+			Scene scene = new Scene(parent);
+			^
+  symbol:   class Scene
+  location: class Main
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:23: error: cannot find symbol
+			Scene scene = new Scene(parent);
+			                  ^
+  symbol:   class Scene
+  location: class Main
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:24: error: cannot find symbol
+			Stage stage = new Stage();
+			^
+  symbol:   class Stage
+  location: class Main
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:24: error: cannot find symbol
+			Stage stage = new Stage();
+			                  ^
+  symbol:   class Stage
+  location: class Main
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:1: error: semanticdb-javac: unknown flag 'de'
+package Applicacation;
+^
+C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Applicacation\Main.java:1: error: semanticdb-javac: unknown flag 'software\Project\src\Applicacation'
+package Applicacation;
+^
+21 errors
+2023.04.12 20:15:14 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Servicio.java
+2023.04.12 20:15:25 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\controller\CrearServicioController.java
+2023.04.12 20:15:31 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Servicio.java
+abr 12, 2023 8:15:59 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 135
+abr 12, 2023 8:16:02 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 145
+2023.04.12 20:16:19 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Servicio.java
+2023.04.12 20:16:19 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Servicio.java
+2023.04.12 20:16:19 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Servicio.java
+2023.04.12 20:16:20 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Servicio.java
+2023.04.12 20:16:19 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Servicio.java
+2023.04.12 20:16:20 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Servicio.java
+2023.04.12 20:16:20 WARN  no build target for: C:\Users\jhona\OneDrive\Documentos\Icesi\Ingenieria de software\Project\src\Model\Servicio.java
+abr 12, 2023 8:21:31 P. M. org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 315
+abr 12, 2023 8:23:54 P. M. org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace

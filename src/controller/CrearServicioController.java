@@ -3,6 +3,8 @@ package controller;
 import java.io.IOException;
 
 import Applicacation.Main;
+import Model.Cliente;
+import Model.Servicio;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -47,6 +49,12 @@ public class CrearServicioController {
     @FXML
     private DatePicker Date_Fact;
 
+    private Cliente cl = new Cliente();
+
+    public CrearServicioController(Cliente cl){
+        this.cl = cl;
+    }
+
     @FXML
     void Return_Service(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/ClientUI.fxml"));
@@ -62,14 +70,19 @@ public class CrearServicioController {
     @FXML
     void Create_Info(ActionEvent event) {
         boolean missingInformation = false;
-        TextField[] nulls = {Service_Adress_Text,Value_ActMonth_Text,Service_State_Text,Service_Code_Text};
-    		for (int i=0;i<nulls.length;i++) {
-				if(nulls[i].getText().equals("")) {
-					missingInformation=true;
-				}
-            }
+        TextField[] nulls = {Service_Adress_Text,Value_ActMonth_Text,Service_State_Text};
+    	for (int i=0;i<nulls.length;i++) {
+			if(nulls[i].getText().equals("")) {
+				missingInformation=true;
+			}
+        }
         if(!missingInformation){
-
+            Boolean state = false;
+            if(Service_State_Text.getText().toUpperCase()=="SI")
+            state = true;
+            Servicio service = new Servicio(Service_Adress_Text.getText(),Date_Installation.getValue(),Date_Fact.getValue(),
+            state,Measurer_Text.getText(),Double.parseDouble(Value_ActMonth_Text.getText()),Double.parseDouble(Value_LastMoth_Text.getText()),cl.getId());
+            
         }else{
             Alert alert = new Alert(Alert.AlertType.WARNING);
 		    alert.setHeaderText(null);
