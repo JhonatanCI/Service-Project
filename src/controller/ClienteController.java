@@ -29,22 +29,10 @@ public class ClienteController implements Initializable{
 	
 	
     @FXML
-    private TextField Contract_Code_Text;
-
-    @FXML
-    private Button Create_Button;
-
-    @FXML
-    private TextField Fact_Text;
-
-    @FXML
     private TextField Phone_Client_Text;
-
+    
     @FXML
     private TextField Id_Client_Text;
-
-    @FXML
-    private Button Update_Bytton;
 
     @FXML
     private DatePicker Date_Client;
@@ -53,18 +41,17 @@ public class ClienteController implements Initializable{
     private TextField Email_Client_Text;
 
     @FXML
-    private Button Consult_Button;
-
+    private TextField  Address_Text;
+    
     @FXML
-    private TextField Name_Client_Text;
+    private Button   Return_Button;
 
-    private String name;
-    private String id;
-    private LocalDate date;
-    private String email;
-    private String contract_code;
-    private String phone;
-    private String adress;
+    public String name;
+    public String id;
+    public LocalDate date;
+    public String email;
+    public String phone;
+    public String adress;
 
     
 
@@ -74,48 +61,51 @@ public class ClienteController implements Initializable{
     }
 
     @FXML
-    void CreateService(ActionEvent event) throws IOException {
-		FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/ServicioCreation.fxml"));
-		loader.setController(new CrearServicioController(empresa));
-		Parent parent = (Parent) loader.load();
-		Scene scene = new Scene(parent);
-		Stage stage = new Stage();
-		stage.setScene(scene);
-		stage.show();
-    close();
-    }
-
-    @FXML
-    void Consult_Service(ActionEvent event) throws IOException {
-		FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/TabladeServicios.fxml"));
-		loader.setController(new TabladeServiciosController(empresa));
-		Parent parent = (Parent) loader.load();
-		Scene scene = new Scene(parent);
-		Stage stage = new Stage();
-		stage.setScene(scene);
-		stage.show();
-    close();
+    void delete_Client(ActionEvent event) {
+    	id=Id_Client_Text.getText();
+		Empresa.eliminarCliente(id);
     }
 
     @FXML
     void Update_Info(ActionEvent event) {
-      
+    	 String phone=Phone_Client_Text.getText();
+         String id= Id_Client_Text.getText();
+         LocalDate date= Date_Client.getValue();
+         String email=Email_Client_Text.getText();
+         
+         
+         Empresa.consultarCliente(id).setEmail(email);
+         Empresa.consultarCliente(id).setFecha_Registro(date);
+         Empresa.consultarCliente(id).setTel_Contacto(phone);         
     }
 
-    private void close(){
-      Stage stage = (Stage) Consult_Button.getScene().getWindow();
-      stage.close();
-  }
+
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-      Contract_Code_Text.setText(contract_code);
-      Fact_Text.setText(adress);
+            
       Phone_Client_Text.setText(phone);
       Id_Client_Text.setText(id);
       Date_Client.setValue(date);
       Email_Client_Text.setText(email);
-      Name_Client_Text.setText(name);
+      
+    }
+    
+    private void close(){
+        Stage stage = (Stage) Return_Button.getScene().getWindow();
+        stage.close();
+    }
+    
+    @FXML
+    private void back() throws IOException {
+        FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/StartMenu.fxml"));
+		loader.setController(new StartMenuController());
+		Parent parent = (Parent) loader.load();
+		Scene scene = new Scene(parent);
+		Stage stage = new Stage();
+		stage.setScene(scene);
+		stage.show();
+        close();
     }
 
 }

@@ -29,7 +29,7 @@ public class Empresa {
 	}
 
 	
-	public void eliminarCliente(String id) {
+	public static void eliminarCliente(String id) {
 		clientes.remove(consultarClientePos(id));
 	}
 
@@ -51,7 +51,60 @@ public class Empresa {
 		
 	}
 	
-	public int consultarClientePos(String id) {
+	public static void eliminarServicio(String codContrato) {
+		if(consultarContratoPos(codContrato)>=0) {
+			clientes.remove(consultarContratoPos(codContrato));
+			
+		}
+	}
+	
+	public static void inhabilitarServicio(String codContrato) {
+		clientes.get(consultarContratoPos(codContrato)).getServicios().get(0).setActivo(false);
+	}
+	
+	public static void editarServicio(String sc,String sa,LocalDate DI, LocalDate DF,int act, int last) {
+		if(!sa.equalsIgnoreCase("")) {
+			clientes.get(consultarContratoPos(sc)).getServicios().get(0).setDir_Instalacion(sa);
+			
+		}
+		if(DI!=null) {
+			clientes.get(consultarContratoPos(sc)).getServicios().get(0).setFecha_Instalacion(DI);
+			
+		}
+		if(DF!=null) {
+			clientes.get(consultarContratoPos(sc)).getServicios().get(0).setFecha_Instalacion(DF);
+			
+		}
+		if(act>=0) {
+			clientes.get(consultarContratoPos(sc)).getServicios().get(0).setVal_MesActual(act);
+			
+		}
+		if(last>=0) {
+			clientes.get(consultarContratoPos(sc)).getServicios().get(0).setVal_MesAnterior(last);	
+		}
+		
+	}
+	
+	public static Cliente consultarContrato(String codContrato) {
+		Cliente cliente= new Cliente();
+		for (int i = 0; i <clientes.size(); i ++) {
+			if(codContrato.equalsIgnoreCase(clientes.get(i).getCod_Contrato())){
+				cliente = clientes.get(i);
+			}
+		  }
+		return cliente;
+	}
+	
+	public static Integer consultarContratoPos(String codContrato) {
+		int a=-1;
+		for (int i = 0; i <clientes.size(); i ++) {
+			if(codContrato.equalsIgnoreCase(clientes.get(i).getCod_Contrato())){
+				a=i;
+			}
+		  }
+		return a;
+	}
+	public static int consultarClientePos(String id) {
 		int cliente = -1;
 		for (int i = 0; i <clientes.size(); i ++) {
 			if(id.equalsIgnoreCase(clientes.get(i).getId())){

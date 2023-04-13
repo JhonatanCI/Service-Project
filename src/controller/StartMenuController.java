@@ -78,6 +78,29 @@ public class StartMenuController {
             controller.setTables();
         }
 
+        @FXML
+        void SelectClient(ActionEvent event) throws IOException {
+            FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/ClientUI.fxml"));
+            loader.setController(new ClienteController(empresa));
+            Parent parent = (Parent) loader.load();
+            Scene scene = new Scene(parent);
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.show();
+            close();
+        }
+
+        @FXML
+        void SelectService(ActionEvent event) throws IOException {
+            FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/ServicioUI.fxml"));
+            loader.setController(new ServicioController(empresa));
+            Parent parent = (Parent) loader.load();
+            Scene scene = new Scene(parent);
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.show();
+            close();
+        }
         private void close() {
             Stage stage = (Stage) Clients_Button.getScene().getWindow();
             stage.close();
