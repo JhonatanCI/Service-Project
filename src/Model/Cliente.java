@@ -1,6 +1,7 @@
 package Model;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Collection;
 
 import javafx.collections.FXCollections;
@@ -8,7 +9,7 @@ import javafx.collections.ObservableList;
 
 public class Cliente {
 
-	public static ObservableList<Servicio> servicio =  FXCollections.observableArrayList();
+	public  static ObservableList<Servicio> servicio =  FXCollections.observableArrayList();
 	private String nombre;
 	private String id;
 	private LocalDate fecha_Registro;
@@ -17,11 +18,13 @@ public class Cliente {
 	private String tel_Contacto;
 	private String email;
 	private Estado state;
+	private ArrayList<Servicio> servicios;
 
 	public Cliente(){
 		
 	}
 	public Cliente(String nombre, String id, LocalDate fecha_Registro, String cod_Contrato, String dir_Facturacion,  String tel_Contacto, String email,Estado state){
+		servicios = new ArrayList<Servicio>();
 		this.nombre= nombre;
 		this.id = id;
 		this.fecha_Registro= fecha_Registro;
@@ -30,6 +33,7 @@ public class Cliente {
 		this.tel_Contacto=tel_Contacto;
 		this.email=email;
 		this.state=state;
+			
 	}
 
 	public String getNombre() {
@@ -112,6 +116,15 @@ public class Cliente {
 
 	public Collection<Servicio> consultar_Servicios() {
 	 return servicio;
+	}
+	
+	
+	public void addServicio(Servicio servicio) {
+		this.servicios.add(servicio);
+	}
+	
+	public ArrayList<Servicio> getServicios() {
+		return servicios;
 	}
 
 }

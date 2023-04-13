@@ -19,6 +19,12 @@ import javafx.stage.Stage;
 
 public class CrearClienteController {
 
+	private Empresa empresa;
+	
+	public CrearClienteController(Empresa empresa) {
+		this.empresa=empresa;
+	}
+	
     @FXML
     private Button Return_Button;
 
@@ -102,6 +108,7 @@ public class CrearClienteController {
             Phone_Text.getText(),Email_Text.getText(),state);
 
             Empresa.clientes.add(newClient);
+            
 
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
 		    alert.setHeaderText(null);

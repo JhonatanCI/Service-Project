@@ -7,6 +7,7 @@ import java.util.ResourceBundle;
 import javafx.fxml.Initializable;
 import Applicacation.Main;
 import Model.Cliente;
+import Model.Empresa;
 import Model.Servicio;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -20,7 +21,11 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 public class TabladeServiciosController implements Initializable{
-
+	private Empresa empresa;
+	
+	public TabladeServiciosController(Empresa empresa) {
+		this.empresa=empresa;
+	}
     @FXML
     private TableColumn<Servicio, String> Code_Column;
 
@@ -56,8 +61,8 @@ public class TabladeServiciosController implements Initializable{
 	}
     @FXML
     void Return(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/ClientUI.fxml"));
-		loader.setController(new ClienteController());
+        FXMLLoader loader = new FXMLLoader(Main.class.getResource("../ui/ClienteCreation.fxml"));
+		loader.setController(new CrearClienteController(empresa));
 		Parent parent = (Parent) loader.load();
 		Scene scene = new Scene(parent);
 		Stage stage = new Stage();

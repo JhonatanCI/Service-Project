@@ -1,33 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.text.*?>
-<?import javafx.scene.control.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="623.0" style="-fx-background-color: #fffff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="623.0" style="-fx-background-color: #fffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Text layoutX="33.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Direccion de instalacion" />
       <TextField fx:id="Service_Adress_Text" layoutX="37.0" layoutY="120.0" />
       <Text layoutX="204.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="fecha de instalacion" />
       <DatePicker fx:id="Date_Installation" layoutX="204.0" layoutY="120.0" prefHeight="25.0" prefWidth="91.0" />
-      <Text layoutX="37.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Estado activo" />
-      <TextField fx:id="Service_State_Text" layoutX="37.0" layoutY="200.0" />
-      <Text layoutX="203.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Medidor" />
+      <Text layoutX="203.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo de Medidor" />
       <TextField fx:id="Measurer_Text" layoutX="203.0" layoutY="200.0" />
       <Text layoutX="377.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor del mes actual" />
       <TextField fx:id="Value_ActMonth_Text" layoutX="377.0" layoutY="200.0" />
-      <Text layoutX="37.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor del mes anterior" />
-      <TextField fx:id="Value_LastMoth_Text" layoutX="37.0" layoutY="267.0" />
-      <Button fx:id="Return_Button" layoutX="34.0" layoutY="326.0" mnemonicParsing="false" onAction="#Return_Service" text="Volver" />
+      <Text layoutX="37.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Valor del mes anterior" />
+      <TextField fx:id="Value_LastMoth_Text" layoutX="33.0" layoutY="200.0" />
+      <Button fx:id="Return_Button" layoutX="37.0" layoutY="339.0" mnemonicParsing="false" onAction="#Return_Service" text="Volver" />
       <Text layoutX="51.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Crear nuevo servicio" wrappingWidth="244.2421875">
          <font>
             <Font size="22.0" />
          </font>
       </Text>
-      <Button fx:id="Create_Button" layoutX="517.0" layoutY="326.0" mnemonicParsing="false" onAction="#Create_Info" text="Crear" />
+      <Button fx:id="Create_Button" layoutX="547.0" layoutY="339.0" mnemonicParsing="false" onAction="#Create_Info" text="Crear" />
       <DatePicker fx:id="Date_Fact" layoutX="332.0" layoutY="120.0" prefHeight="25.0" prefWidth="91.0" />
       <Text layoutX="333.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="fecha de facturacion" />
+      <ChoiceBox fx:id="tipo_ServicioChoicebox" layoutX="33.0" layoutY="256.0" prefWidth="150.0" />
+      <Text layoutX="33.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de servicio" />
+      <ChoiceBox fx:id="tipo_ContratoChoicebox" layoutX="203.0" layoutY="256.0" prefWidth="150.0" />
+      <Text layoutX="208.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo de contrato" />
+      <TextField fx:id="minL_Text" layoutX="377.0" layoutY="256.0" />
+      <TextField fx:id="MinI_Text" layoutX="377.0" layoutY="314.0" prefWidth="150.0" />
+      <Text layoutX="377.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minutos locales" />
+      <Text layoutX="373.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Minutos Internacionales" wrappingWidth="134.998046875" />
+      <TextField fx:id="megas_Text" layoutX="203.0" layoutY="314.0" />
+      <Text layoutX="203.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Megas internet" wrappingWidth="134.998046875" />
+      <TextField fx:id="cod_Contrato_Text" layoutX="434.0" layoutY="57.0" />
+      <Text layoutX="430.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo Contrato" />
    </children>
 </AnchorPane>
